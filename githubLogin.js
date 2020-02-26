@@ -30,14 +30,14 @@ function onSubmit(form) {
                         content.indexOf('>', replaceBody) + 1,
                         content.indexOf('</body>'));
                   });
-                  localStorage.setItem('githubPagesAuth', JSON.stringify({ username: login, token: password }));
+                  // localStorage.setItem('githubPagesAuth', JSON.stringify({ username: login, token: password }));
               }
             });
         
     return false;
 }
 
-const existingAuth = JSON.parse(localStorage.getItem('githubPagesAuth'));
-if (existingAuth) {
-    onSubmit(existingAuth);
-}
+// const existingAuth = JSON.parse(localStorage.getItem('githubPagesAuth'));
+// if (existingAuth) {
+//     onSubmit(existingAuth);
+// }
